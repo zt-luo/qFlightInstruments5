@@ -117,7 +117,7 @@ void QADI::paintEvent(QPaintEvent *)
         QString s;
 
         pitchPen.setWidth(2);
-        painter.setFont(QFont("", fontSize));
+        painter.setFont(QFont("Arial", fontSize));
 
 
         // draw lines
@@ -198,7 +198,7 @@ void QADI::paintEvent(QPaintEvent *)
 
         blackPen.setWidth(1);
         painter.setPen(blackPen);
-        painter.setFont(QFont("", fontSize));
+        painter.setFont(QFont("Arial", fontSize));
 
         for(int i=0; i<nRollLines; i++) {
             if( i < nRollLines/2 )
@@ -335,7 +335,8 @@ void QCompass::paintEvent(QPaintEvent *)
     bluePen.setWidth(2);
     greenPen.setWidth(2);
 
-    painter.setRenderHint(QPainter::Antialiasing);
+//    painter.setRenderHint(QPainter::Antialiasing);
+    painter.setRenderHint(QPainter::Qt4CompatiblePainting);
 
     painter.translate(width() / 2, height() / 2);
 
@@ -367,27 +368,27 @@ void QCompass::paintEvent(QPaintEvent *)
                 s = "N";
                 painter.setPen(bluePen);
 
-                painter.setFont(QFont("", fontSize*1.3));
+                painter.setFont(QFont("Arial", fontSize*1.3));
             } else if ( i == 9 ) {
                 s = "W";
                 painter.setPen(blackPen);
 
-                painter.setFont(QFont("", fontSize*1.3));
+                painter.setFont(QFont("Arial", fontSize*1.3));
             } else if ( i == 18 ) {
                 s = "S";
                 painter.setPen(redPen);
 
-                painter.setFont(QFont("", fontSize*1.3));
+                painter.setFont(QFont("Arial", fontSize*1.3));
             } else if ( i == 27 ) {
                 s = "E";
                 painter.setPen(blackPen);
 
-                painter.setFont(QFont("", fontSize*1.3));
+                painter.setFont(QFont("Arial", fontSize*1.3));
             } else {
                 s = QString("%1").arg(i*rotAng);
                 painter.setPen(blackPen);
 
-                painter.setFont(QFont("", fontSize));
+                painter.setFont(QFont("Arial", fontSize));
             }
 
             fx1 = 0;
@@ -490,7 +491,7 @@ void QCompass::paintEvent(QPaintEvent *)
         blackPen.setWidth(2);
         painter.setPen(blackPen);
         painter.setBrush(QBrush(Qt::white));
-        painter.setFont(QFont("", altFontSize));
+        painter.setFont(QFont("Arial", altFontSize));
 
         painter.drawRoundedRect(fx, fy, w, h, 6, 6);
 
@@ -603,7 +604,7 @@ void QKeyValueListView::listUpdate_slot(void)
             if( i % 2 == 0 ) item->setBackgroundColor(clB1);
             else             item->setBackgroundColor(clB2);
 
-            item->setFont(QFont("", fontSize));
+            item->setFont(QFont("Arial", fontSize));
 
             this->setItem(i, 0, item);
         }
@@ -619,7 +620,7 @@ void QKeyValueListView::listUpdate_slot(void)
             if( i % 2 == 0 ) item->setBackgroundColor(clB1);
             else             item->setBackgroundColor(clB2);
 
-            item->setFont(QFont("", fontSize));
+            item->setFont(QFont("Arial", fontSize));
 
             this->setItem(i, 1, item);
         }
