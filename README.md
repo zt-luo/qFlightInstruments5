@@ -41,7 +41,7 @@ Only test on Linux Mint 16 64-bit.
 
 
 ## Screenshot:
--![alt text](https://raw.githubusercontent.com/bushuhui/qFlightInstruments/master/screen_shot.png "Screenshot 1")
+-![alt text](https://raw.githubusercontent.com/zt-luo/qFlightInstruments5/master/screen_shot.png "Screenshot 1")
 
 
 
