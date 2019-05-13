@@ -6,7 +6,8 @@ The source is based on part of source code (https://github.com/cmex81/qAttitudeI
 
 
 ## Requirements:
-* Qt4 (sudo apt-get install libqt4-core libqt4-dev)
+* ~Qt4 (sudo apt-get install libqt4-core libqt4-dev)~
+* Qt5 
 
 
 ## Compile:
